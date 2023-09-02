@@ -1,0 +1,1312 @@
+main {
+
+    #slider {
+        overflow-x: hidden;
+
+        img {
+            object-fit: cover;
+        }
+
+        .carousel-control-next-icon {
+            background-color: #F3E0CA;
+            width: 45px;
+            height: 45px;
+            transition: .3s;
+
+            &:hover {
+                background-color: #9F7A49;
+            }
+        }
+
+        .carousel-control-prev-icon {
+            background-color: #F3E0CA;
+            width: 45px;
+            height: 45px;
+            transition: .3s;
+
+            &:hover {
+                background-color: #9F7A49;
+            }
+        }
+
+        .img1 {
+            position: relative;
+
+        }
+
+        .img-1-text {
+            position: absolute;
+            top: 46%;
+            left: 62%;
+            color: white;
+
+            h3 {
+                font-size: 32px;
+                color: #9F7A49;
+            }
+
+            span {
+                font-size: 21px;
+                // margin-left: 56%;
+                color: #F3E0CA;
+            }
+
+            .btn-1 {
+                position: absolute;
+                top: 90px;
+                left: 60%;
+
+
+                button {
+                    width: 170px;
+                    height: 50px;
+                    display: block;
+                    padding: 13px 0;
+                    // border-radius: 10px;
+                    border: none;
+                    border: 1px solid #F3E0CA;
+                    background: transparent;
+                    color: #F3E0CA;
+                    font-weight: 700;
+                    transition: .3s linear;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #9F7A49;
+                        color: white;
+
+
+                    }
+                }
+
+
+            }
+
+        }
+
+        .img-2-text {
+            position: absolute;
+            top: 46%;
+            left: 27%;
+            color: white;
+
+            h3 {
+                font-size: 32px;
+                color: #9F7A49;
+            }
+
+            span {
+                font-size: 21px;
+                // margin-left: 56%;
+                color: #F3E0CA;
+            }
+
+            .btn-2 {
+                position: absolute;
+                top: 90px;
+                left: 22%;
+
+                button {
+
+                    width: 170px;
+                    height: 50px;
+                    display: block;
+                    padding: 13px 0;
+                    // border-radius: 10px;
+                    border: none;
+                    border: 1px solid #F3E0CA;
+                    background: transparent;
+                    color: #F3E0CA;
+                    font-weight: 700;
+                    transition: .3s linear;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #9F7A49;
+                        color: white;
+
+
+                    }
+                }
+            }
+        }
+
+        .roww {
+            display: flex;
+
+            .girl {
+                position: relative;
+                display: flex;
+                overflow: hidden;
+
+                .girl1 {
+                    object-fit: cover;
+                    height: 416px;
+                }
+
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    transition: .8s ease-in-out;
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+
+                .girl1_text {
+                    position: absolute;
+                    color: white;
+                    top: 40%;
+                    left: 58%;
+
+                    span {
+                        font-size: 38px;
+                        color: #9F7A49;
+                    }
+
+                    p {
+                        font-size: 17px;
+                    }
+
+                    .btn-3 {
+                        position: absolute;
+                        left: 50%;
+                        padding-top: 5%;
+
+                        button {
+
+                            width: 170px;
+                            height: 50px;
+                            display: block;
+                            padding: 13px 0;
+                            // border-radius: 10px;
+                            border: none;
+                            border: 1px solid #F3E0CA;
+                            background: transparent;
+                            color: #F3E0CA;
+                            font-weight: 700;
+                            transition: .3s linear;
+                            cursor: pointer;
+
+                            &:hover {
+                                background-color: #9F7A49;
+                                color: white;
+
+
+                            }
+                        }
+
+                    }
+                }
+
+                @media screen and (max-width: 970px) {
+                    .girl1_text {
+                        display: none;
+
+                        .btn-3 {
+                            display: none;
+                        }
+
+
+                    }
+                }
+            }
+
+            .all-girl2 {
+                position: relative;
+                overflow: hidden;
+                // height: 411px;
+
+                img {
+                    transition: .8s ease-in-out;
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+
+                .girl2 {
+                    width: 100%;
+                    object-fit: cover;
+                    height: 416px;
+                }
+
+                .girl2_text {
+                    position: absolute;
+                    top: 42%;
+                    color: white;
+                    left: 56%;
+
+                    span {
+                        font-size: 38px;
+                        color: #9F7A49;
+                    }
+
+                    p {
+                        font-size: 17px;
+                    }
+
+                    .btn-4 {
+                        position: absolute;
+                        left: 50%;
+                        padding-top: 5%;
+
+                        button {
+
+                            width: 170px;
+                            height: 50px;
+                            display: block;
+                            padding: 13px 0;
+                            // border-radius: 10px;
+                            border: none;
+                            border: 1px solid #F3E0CA;
+                            background: transparent;
+                            color: #F3E0CA;
+                            font-weight: 700;
+                            transition: .3s linear;
+                            cursor: pointer;
+
+                            &:hover {
+                                background-color: #9F7A49;
+                                color: white;
+
+
+                            }
+                        }
+
+                    }
+                }
+
+                @media screen and (max-width: 970px) {
+                    .girl2_text {
+                        display: none;
+
+                        .btn-4 {
+                            display: none;
+                        }
+
+
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width: 992px) {
+            .carousel {
+                // height: 450px;
+
+                .carousel-item {
+                    .img-1-text {
+                        display: none;
+
+                        h3 {}
+
+                        .btn-1 {}
+                    }
+
+                    .img-2-text {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+    #cards {
+        background-image: url(https://chrono-dial.myshopify.com/cdn/shop/files/chrono-img1.jpg?v=1613163886);
+        width: 100%;
+        height: 820px;
+        background-position: bottom;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            // opacity: .702;
+        }
+
+        .cards_text {
+            color: white;
+            text-align: center;
+
+            span {
+                font-size: 16px;
+            }
+
+            h3 {
+                color: #9F7A49;
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 16px;
+                color: #9C9C9C;
+                padding-top: 10px;
+            }
+
+            .card_btn {
+                position: absolute;
+                left: 45%;
+                padding-top: 15px;
+
+                button {
+
+                    width: 170px;
+                    height: 50px;
+                    display: block;
+                    padding: 13px 0;
+                    // border-radius: 10px;
+                    border: none;
+                    border: 1px solid #F3E0CA;
+                    background: transparent;
+                    color: #F3E0CA;
+                    font-weight: 700;
+                    transition: .3s linear;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #9F7A49;
+                        color: white;
+
+
+                    }
+                }
+
+            }
+        }
+
+
+
+
+    }
+
+
+
+    #clocks {
+        background: url(https://chrono-dial.myshopify.com/cdn/shop/files/img1.jpg?v=1613162803&width=1920);
+        padding: 50px;
+        width: 100%;
+        // height: 820px;
+        background-position: bottom;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &::before {
+            // position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            // opacity: .702;
+        }
+
+        .all-clocks-text {
+            text-align: center;
+            font-weight: 800;
+
+            span {
+                font-size: 16px;
+                color: #000000;
+            }
+
+            h2 {
+                color: #000000;
+                font-size: 30px;
+                font-weight: 600;
+            }
+        }
+
+        .clocks_img {
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: .3s linear;
+
+                &:hover {
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+                }
+            }
+
+            .clocks_text {
+                text-align: center;
+
+                span {
+                    a {
+                        text-decoration: none;
+                        font-size: 18px;
+                        color: #000000;
+                        transition: .3s;
+
+                        &:hover {
+                            color: #9F7A49;
+                        }
+                    }
+                }
+            }
+
+            .clocks_btn {
+                text-align: center;
+                padding-top: 10px;
+
+                a {
+                    color: #000000;
+                    transition: .3s linear;
+                    cursor: pointer;
+                    text-decoration: none;
+                    font-size: 16px;
+                    font-weight: 700;
+
+                    &:hover {
+                        color: #9F7A49;
+                    }
+                }
+
+            }
+        }
+    }
+
+    #clock_slider {
+
+        background-image: url(https://chrono-dial.myshopify.com/cdn/shop/files/chrono-img1_4e04e0d0-e7b2-4e6a-8a8f-e87caa09bfcc.jpg?v=1613163901);
+        width: 100%;
+        height: 820px;
+        // background-position: bottom;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #000000;
+            opacity: 0.852;
+
+        }
+
+        .header_clock_slider_text {
+            position: relative;
+            color: white;
+            text-align: center;
+            top: -250%;
+            left: 50%;
+
+            span {
+                font-size: 16px;
+            }
+
+            h2 {
+                color: #9F7A49;
+                font-size: 30px;
+            }
+        }
+
+
+        .carousel {
+            position: relative;
+            left: -50%;
+            top: 20%;
+
+            .carousel-inner {
+                .carousel-item {
+                    img {
+                        // width: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width: 992px) {
+            .header_clock_slider_text {
+                display: none;
+            }
+        }
+
+
+
+    }
+
+
+    #swipe {
+        // height: 100vh;
+        // width: 100%;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        background: url(https://chrono-dial.myshopify.com/cdn/shop/files/img1.jpg?v=1613162803&width=1920);
+        padding: 50px;
+        width: 100%;
+        // height: 820px;
+        background-position: bottom;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            // opacity: .702;
+        }
+
+
+        .swipe_text {
+            text-align: center;
+
+            span {
+                font-size: 16px;
+                font-weight: 500;
+                color: #000000;
+            }
+
+            h2 {
+                font-size: 30px;
+                color: #000000;
+                font-weight: bold;
+            }
+        }
+
+
+        .testimonial {
+            position: relative;
+            // max-width: 900px;
+            width: 100%;
+            padding: 50px 0;
+            // background-color: #fff;
+            overflow: hidden;
+
+            .image {
+                height: 170px;
+                width: 170px;
+                object-fit: cover;
+
+            }
+
+            .slide1 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                row-gap: 30px;
+
+                p {
+                    text-align: center;
+                    padding: 0 100px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #333;
+                }
+
+                .details {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 10px;
+
+                    .name {
+                        font-size: 17px;
+                        font-weight: 600;
+                        color: #333;
+                    }
+
+                    .job {
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: gray;
+                    }
+
+                }
+
+
+            }
+
+            .nav-btn {
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                transform: translateY(30px);
+                background-color: rgba(0, 0, 0, 0.1);
+                transition: 0.2s;
+
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.1);
+                }
+
+            }
+
+            .nav-btn::after,
+            .nav-btn::before {
+                font-size: 20px;
+                color: #fff;
+
+            }
+
+            .swiper-pagination-bullet {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+
+            .swiper-pagination-bullet-active {
+                background-color: #9F7A49;
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            p {
+                padding: 0 20px;
+            }
+
+            .nav-btn {
+                display: none;
+            }
+        }
+
+    }
+
+
+    #dials {
+        background: url(https://chrono-dial.myshopify.com/cdn/shop/files/specification-banner.jpg?v=1621437492&width=1920);
+        padding: 50px;
+        width: 100%;
+        // height: 820px;
+        background-position: bottom;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+        }
+
+
+
+        .all-info {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+
+            .text {
+                h1 {
+                    color: white;
+                    margin-top: 0;
+                    margin-bottom: 1rem;
+                    font-size: 16px;
+                }
+
+                h2 {
+                    font-size: 24px;
+                    font-weight: 400;
+                    color: #9F7A49;
+                }
+
+                p {
+                    font-size: 16px;
+                    color: #9C9C9C;
+
+                }
+            }
+
+            .all-items {
+                display: flex;
+                flex-direction: row;
+                gap: 50px;
+                align-items: center;
+
+                .items-left {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 20px;
+
+                    .item {
+                        display: flex;
+                        gap: 10px;
+                        align-items: center;
+
+                        img {
+                            border-radius: 50%;
+                        }
+
+                        h1 {
+                            font-size: 18px;
+                            color: #9C9C9C;
+
+                        }
+                    }
+                }
+
+                .items-right {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    align-items: center;
+
+                    .item {
+                        display: flex;
+                        gap: 10px;
+                        align-items: center;
+
+                        img {
+                            border-radius: 50%;
+                        }
+
+                        h1 {
+                            font-size: 18px;
+                            color: #9C9C9C;
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    #filter {
+        padding: 50px;
+
+        .text {
+            text-align: center;
+
+            h3 {
+                font-weight: bold;
+                font-size: 16px;
+            }
+
+            p {
+                font-size: 30px;
+                font-weight: 600;
+            }
+        }
+
+        #filter-buttons button {
+
+            font-size: 16px;
+        }
+
+        #filter-buttons .btn {
+            display: flex;
+            justify-content: center;
+        }
+
+
+
+        #filter-buttons button:hover {
+            color: #9F7A49;
+        }
+
+        #filter-buttons button.active {
+            // color: black;
+
+        }
+
+        #filterable-cards .card {
+            width: 15rem;
+
+        }
+
+        #filterable-cards {
+            justify-content: center;
+        }
+
+        #filterable-cards .card.hide {
+            display: none;
+        }
+
+        .card .card-body h6 {
+            text-align: center;
+        }
+
+        .card .card-body p {
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            #filterable-cards {
+                justify-content: center;
+            }
+
+            #filterable-cards .card {
+                width: calc(100% / 2 - 10px);
+            }
+        }
+    }
+
+
+
+    #video {
+        background-image: url(https://chrono-dial.myshopify.com/cdn/shop/files/img6.jpg?v=1613163148&width=1100);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 820px;
+        object-fit: cover;
+        object-position: center;
+        background-attachment: unset;
+
+
+
+        .video-text {
+            color: white;
+            text-align: center;
+            padding-top: 25%;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            h1 {
+                font-size: 40px;
+                font-weight: 400;
+                font-family: 'Tajawal', sans-serif;
+            }
+
+            p {
+                font-size: 16px;
+
+            }
+        }
+
+        .modal-content {
+            width: 100%;
+        }
+
+        i {
+            font-size: 80px;
+            color: white;
+            transition: .3s;
+
+            &:hover {
+                color: #9F7A49;
+            }
+        }
+
+
+    }
+
+    #news {
+        padding: 50px;
+        background-color: #000000;
+        overflow-y: hidden;
+
+        .news-text {
+            text-align: center;
+            padding: 50px;
+
+            h1 {
+                color: #9C9C9C;
+                font-size: 16px;
+            }
+
+            p {
+                color: #9C9C9C;
+                font-size: 30px;
+                font-weight: bold;
+            }
+        }
+
+        .slider {
+            // max-width: 1100px;
+            display: flex;
+
+            .card {
+                .content {
+                    background-color: #000000;
+                }
+            }
+
+            .card {
+                flex: 1;
+                margin: 0 10px;
+                background: #fff;
+
+                .img {
+                    height: 400px;
+                    width: 100%;
+                    overflow: hidden;
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                        transition: .2s ease-in-out;
+
+                        &:hover {
+                            transform: scale(1.5);
+                        }
+                    }
+                }
+
+                .content {
+                    padding: 10px 20px;
+
+                    .title {
+                        font-size: 25px;
+                        font-weight: 600;
+                        color: white;
+                    }
+
+
+
+                    p {
+                        text-align: justify;
+                        margin: 10px 0;
+                        color: white;
+                    }
+
+                    .btn {
+                        display: block;
+                        // text-align: left;
+                        margin: 10px 0;
+
+                        button {
+                            background: black;
+                            color: #9F7A49;
+                            border: 1px solid #9F7A49;
+                            width: 156px;
+                            height: 50px;
+
+                            font-size: 17px;
+                            padding: 5px 8px;
+                            border-radius: 5px;
+                            cursor: pointer;
+                            transition: 0.3s ease-in-out;
+
+                            &:hover {
+                                background-color: #9F7A49;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 992px) {
+                .card {
+                    display: none;
+
+                }
+            }
+        }
+
+    }
+
+
+    #subscribe {
+        padding: 50px;
+        background-color: #000000;
+
+        .sb_text {
+            text-align: center;
+
+            h1 {
+                font-size: 16px;
+                color: #9C9C9C;
+            }
+
+            p {
+                font-size: 30px;
+                color: #9C9C9C;
+                font-weight: bold;
+            }
+        }
+
+        .adress {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+
+            input {
+                width: 600px;
+                padding: 10px;
+                background: transparent;
+                border-top: none;
+                border-right: none;
+                border-left: none;
+                border-bottom: 1px solid white;
+
+
+            }
+
+            button {
+                background: black;
+                color: #9F7A49;
+                border: none;
+                border-bottom: 1px solid #9F7A49;
+                width: 156px;
+                height: 50px;
+                font-size: 17px;
+                padding: 5px 8px;
+                // border-radius: 5px;
+                cursor: pointer;
+                transition: 0.3s ease-in-out;
+
+                &:hover {
+                    background-color: #9F7A49;
+                    color: white;
+                }
+
+                i {
+                    padding-left: 15px;
+                    font-size: 20px;
+                }
+
+                @media screen and (max-width: 992px) {
+                    .bi-telegram {
+                        display: none;
+
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+
+
+
+
+
+
+footer {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: #f3f3f3;
+}
+
+
+
+footer .content {
+    max-width: 1250px;
+    margin: auto;
+    padding: 30px 40px 40px 40px;
+}
+
+footer .content .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+
+footer .content .link-boxes {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .content .link-boxes .box {
+    width: calc(100% / 5 - 10px);
+}
+
+.content .link-boxes .box .link_name {
+    color: #9F7A49;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+
+.content .link-boxes .box li {
+    margin: 6px 0;
+    list-style: none;
+
+}
+
+.content .link-boxes .box li a {
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: all 0.4s ease-in-out;
+}
+
+.content .link-boxes .box li a:hover {
+    color: #9F7A49;
+}
+
+.content .link-boxes .input-box {
+    margin-right: 55px;
+}
+
+
+footer .bottom-details {
+    width: 100%;
+
+}
+
+.bottom-logo {
+    display: flex;
+    justify-content: center;
+    object-fit: contain;
+}
+
+.bottom-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    cursor: pointer;
+    padding-top: 15px;
+
+}
+
+.bi-twitter:hover {
+    transition: .3s ease-in-out;
+    color: #9F7A49;
+}
+
+.bi-facebook:hover {
+    transition: .3s ease-in-out;
+    color: #9F7A49;
+}
+
+.bi-tropical-storm:hover {
+    transition: .3s ease-in-out;
+    color: #9F7A49;
+}
+
+.bi-instagram:hover {
+    transition: .3s ease-in-out;
+    color: #9F7A49;
+}
+
+footer .bottom-details .bottom_text {
+    max-width: 1250px;
+    margin: auto;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-details .bottom_text span,
+.bottom-details .bottom_text a {
+    font-size: 18px;
+    font-weight: 300;
+    color: black;
+    opacity: 0.8;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.bottom-details .bottom_text a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.bottom-details .bottom_text a {
+    margin-right: 10px;
+}
+
+@media (max-width: 900px) {
+    footer .content .link-boxes {
+        flex-wrap: wrap;
+    }
+
+    footer .content .link-boxes .input-box {
+        width: 40%;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 700px) {
+    footer {
+        position: relative;
+    }
+
+    .content .top .logo-details {
+        font-size: 26px;
+    }
+
+    .content .top .media-icons a {
+        height: 35px;
+        width: 35px;
+        font-size: 14px;
+        line-height: 35px;
+    }
+
+    footer .content .link-boxes .box {
+        width: calc(100% / 3 - 10px);
+    }
+
+    footer .content .link-boxes .input-box {
+        width: 60%;
+    }
+
+    .bottom-details .bottom_text span,
+    .bottom-details .bottom_text a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 520px) {
+    footer::before {
+        top: 145px;
+    }
+
+    footer .content .top {
+        flex-direction: column;
+    }
+
+    .content .top .media-icons {
+        margin-top: 16px;
+    }
+
+    footer .content .link-boxes .box {
+        width: calc(100% / 2 - 10px);
+    }
+
+    footer .content .link-boxes .input-box {
+        width: 100%;
+    }
+}

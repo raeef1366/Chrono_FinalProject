@@ -1,0 +1,159 @@
+main {
+    #contact {
+
+        padding: 50px;
+
+        .contact-text {
+            text-align: center;
+            padding: 50px;
+
+            h3 {
+                font-size: 16px;
+            }
+
+            h2 {
+                font-size: 30px;
+                font-weight: bold;
+            }
+        }
+
+        .all-icn {
+            width: 100%;
+            height: 235px;
+            border: 1px solid #cacaca;
+            transition: .3s ease-in-out;
+
+            &:hover {
+                border: 1px solid #9F7A49;
+            }
+
+            .contact_icon {
+                // text-align: center;
+                padding-left: 20px;
+
+                i {
+                    font-size: 30px;
+                    position: relative;
+                    top: 20px;
+                }
+            }
+
+            .contact_text {
+                // text-align: center;
+                padding-top: 40px;
+                padding-left: 16px;
+
+                h3 {
+                    font-size: 20px;
+                }
+
+                p {
+                    font-size: 18px;
+
+                }
+            }
+        }
+
+
+
+    }
+
+    #message {
+        padding: 50px;
+
+        form {
+
+            .guruweba_example_form {
+                width: 290px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .guruweba_example_caption {
+                font-size: 24px;
+                text-align: center;
+            }
+
+            .guruweba_example_form .guruweba_example_infofield {
+                margin-top: 10px;
+                font-weight: bold;
+            }
+
+            .guruweba_example_form select,
+            .guruweba_example_form input,
+            .guruweba_example_form textarea {
+                width: 100%;
+                margin: 5px 0;
+                padding: 5px 15px;
+            }
+
+            input {
+                width: 700px;
+                margin: 5px 0;
+                padding: 5px 15px;
+                height: 50px;
+                border: none;
+                /* background: transparent; */
+                border-bottom: 1px solid black;
+
+
+            }
+
+            .btn_1 {
+                color: #9F7A49;
+                border: 1px solid #9F7A49;
+                width: 250px;
+                height: 50px;
+                font-size: 17px;
+                padding: 5px 8px;
+                cursor: pointer;
+                transition: 0.3s ease-in-out;
+
+                &:hover {
+                    background-color: #9F7A49;
+                    color: white;
+                }
+            }
+
+            textarea {
+                width: 700px;
+                border: none;
+                border-bottom: 1px solid black;
+            }
+        }
+
+
+        @media screen and (max-width: 500px) {
+            .map {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .guruweba_example_form {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+            .guruweba_example_form {
+                display: none;
+            }
+        }
+
+
+        @media screen and (max-width: 1024px) {
+            .map {
+                display: none;
+            }
+        }
+
+
+
+
+    }
+
+
+
+}

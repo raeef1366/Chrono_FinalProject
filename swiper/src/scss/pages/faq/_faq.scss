@@ -1,0 +1,82 @@
+main {
+    #faq {
+        background: url(https://chrono-dial.myshopify.com/cdn/shop/files/img1.jpg?v=1613162803&width=1920);
+        padding: 50px;
+        width: 100%;
+        // height: 820px;
+        // background-position: bottom;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+
+        &::before {
+            // position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            // opacity: .702;
+        }
+
+        .faq_text {
+            text-align: center;
+            padding-top: 50px;
+
+            h1 {
+                font-size: 36px;
+                font-weight: bold;
+            }
+
+            a {
+                font-size: 16px;
+                text-decoration: none;
+                color: black;
+                transition: .3s ease-in-out;
+
+                &:hover {
+                    color: #9F7A49;
+                }
+            }
+        }
+    }
+
+    #question {
+        padding: 50px;
+
+        .question-text {
+            text-align: center;
+            padding-top: 50px;
+            padding: 50px;
+
+            h2 {
+                font-size: 16px;
+                color: #000000;
+            }
+
+            span {
+                font-size: 30px;
+                color: #000000;
+                font-weight: bold;
+            }
+        }
+
+        .accordion {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            .accordion-button {
+                background-color: #9F7A49;
+                color: white;
+            }
+        }
+
+    }
+
+}

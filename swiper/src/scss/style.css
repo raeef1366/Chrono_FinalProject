@@ -1,0 +1,1621 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jura", sans-serif;
+}
+
+nav {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  background: black;
+}
+
+nav .wrapper {
+  position: relative;
+  max-width: 1300px;
+  padding: 0px 30px;
+  height: 70px;
+  line-height: 70px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper .logo a img {
+  display: flex;
+  object-fit: contain;
+}
+
+.wrapper .nav-links {
+  display: inline-flex;
+  margin-bottom: 0;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links li a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 9px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.nav-links li a .gld {
+  color: #9F7A49;
+}
+
+.nav-links li a:hover {
+  background: #3A3B3C;
+}
+
+.nav-links .mobile-item {
+  display: none;
+}
+
+.nav-links .drop-menu {
+  position: absolute;
+  background: #242526;
+  width: 180px;
+  line-height: 45px;
+  top: 85px;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.nav-links li:hover .drop-menu,
+.nav-links li:hover .mega-box {
+  transition: all 0.3s ease;
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.drop-menu li a {
+  width: 100%;
+  display: block;
+  padding: 0 0 0 15px;
+  font-weight: 400;
+  border-radius: 0px;
+}
+
+.mega-box {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 0 30px;
+  top: 85px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.mega-box .content {
+  background: white;
+  padding: 45px 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.mega-box .content .row {
+  width: calc(25% - 30px);
+  line-height: 45px;
+}
+
+.mega-box .content .row .row-text1 {
+  margin-top: -38px;
+  text-align: center;
+  width: 199px;
+  height: 80px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.mega-box .content .row .row-text1 p {
+  margin-top: -10px;
+  transition: 0.3s;
+}
+.mega-box .content .row .row-text1 p:hover {
+  color: #9F7A49;
+}
+
+.mega-box .content .row .row-text1 span {
+  margin-top: -10px;
+  transition: 0.3s;
+}
+.mega-box .content .row .row-text1 span:hover {
+  color: #9F7A49;
+}
+
+.mega-box .content .row .row-text2 {
+  margin-top: -38px;
+  text-align: center;
+  width: 199px;
+  height: 80px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.mega-box .content .row .row-text2 p {
+  margin-top: -10px;
+  transition: 0.3s;
+}
+.mega-box .content .row .row-text2 p:hover {
+  color: #9F7A49;
+}
+
+.mega-box .content .row .row-text2 span {
+  transition: 0.3s;
+}
+.mega-box .content .row .row-text2 span:hover {
+  color: #9F7A49;
+}
+
+.mega-box .content .row .row-text3 {
+  margin-top: -38px;
+  text-align: center;
+  width: 199px;
+  height: 80px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.mega-box .content .row .row-text3 p {
+  margin-top: -10px;
+  transition: 0.3s;
+}
+.mega-box .content .row .row-text3 p:hover {
+  color: #9F7A49;
+}
+
+.mega-box .content .row .row-text3 span {
+  transition: 0.3s;
+}
+.mega-box .content .row .row-text3 span:hover {
+  color: #9F7A49;
+}
+
+.mega-box .content .row .row-text4 {
+  margin-top: -38px;
+  text-align: center;
+  width: 199px;
+  height: 80px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.mega-box .content .row .row-text4 p {
+  margin-top: -10px;
+  transition: 0.3s;
+}
+.mega-box .content .row .row-text4 p:hover {
+  color: #9F7A49;
+}
+
+.mega-box .content .row .row-text4 span {
+  transition: 0.3s;
+}
+.mega-box .content .row .row-text4 span:hover {
+  color: #9F7A49;
+}
+
+.mega-box .content .row .row-text5 {
+  margin-top: -38px;
+  text-align: center;
+  width: 199px;
+  height: 80px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.mega-box .content .row .row-text5 p {
+  margin-top: -10px;
+  transition: 0.3s;
+}
+.mega-box .content .row .row-text5 p:hover {
+  color: #9F7A49;
+}
+
+.mega-box .content .row .row-text5 span {
+  transition: 0.3s;
+}
+.mega-box .content .row .row-text5 span:hover {
+  color: #9F7A49;
+}
+
+.mega-box .content .row .row-text6 {
+  margin-top: -38px;
+  text-align: center;
+  width: 199px;
+  height: 80px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.mega-box .content .row .row-text6 p {
+  margin-top: -10px;
+  transition: 0.3s;
+}
+.mega-box .content .row .row-text6 p:hover {
+  color: #9F7A49;
+}
+
+.mega-box .content .row .row-text6 span {
+  transition: 0.3s;
+}
+.mega-box .content .row .row-text6 span:hover {
+  color: #9F7A49;
+}
+
+.content .row img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-top: -35px;
+}
+
+.content .row header {
+  color: #f2f2f2;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.content .row .mega-links {
+  margin-left: -40px;
+  border-left: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.row .mega-links li {
+  padding: 0 20px;
+}
+
+.row .mega-links li a {
+  padding: 0px;
+  padding: 0 20px;
+  color: #d9d9d9;
+  font-size: 17px;
+  display: block;
+}
+
+.row .mega-links li a:hover {
+  color: #f2f2f2;
+}
+
+.wrapper .btn {
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.wrapper .btn.close-btn {
+  position: absolute;
+  right: 30px;
+  top: 10px;
+}
+
+.icon {
+  color: white;
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+}
+.icon i {
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 970px) {
+  .wrapper .btn {
+    display: block;
+  }
+  .wrapper .nav-links {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 350px;
+    top: 0;
+    left: -100%;
+    background: #242526;
+    display: block;
+    padding: 50px 10px;
+    line-height: 50px;
+    overflow-y: auto;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.18);
+    transition: all 0.3s ease;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #242526;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #3A3B3C;
+  }
+  #menu-btn:checked ~ .nav-links {
+    left: 0%;
+  }
+  #menu-btn:checked ~ .btn.menu-btn {
+    display: none;
+  }
+  #close-btn:checked ~ .btn.menu-btn {
+    display: block;
+  }
+  .nav-links li {
+    margin: 15px 10px;
+  }
+  .nav-links li a {
+    padding: 0 20px;
+    display: block;
+    font-size: 20px;
+  }
+  .nav-links .drop-menu {
+    position: static;
+    opacity: 1;
+    top: 65px;
+    visibility: visible;
+    padding-left: 20px;
+    width: 100%;
+    max-height: 0px;
+    overflow: hidden;
+    box-shadow: none;
+    transition: all 0.3s ease;
+  }
+  #showDrop:checked ~ .drop-menu,
+  #showMega:checked ~ .mega-box {
+    max-height: 100%;
+  }
+  .nav-links .desktop-item {
+    display: none;
+  }
+  .nav-links .mobile-item {
+    display: block;
+    color: #f2f2f2;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  .nav-links .mobile-item:hover {
+    background: #3A3B3C;
+  }
+  .drop-menu li {
+    margin: 0;
+  }
+  .drop-menu li a {
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  .mega-box {
+    position: static;
+    top: 65px;
+    opacity: 1;
+    visibility: visible;
+    padding: 0 20px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  .mega-box .content {
+    box-shadow: none;
+    flex-direction: column;
+    padding: 20px 20px 0 20px;
+  }
+  .mega-box .content .row {
+    width: 100%;
+    margin-bottom: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  .mega-box .content .row:nth-child(1),
+  .mega-box .content .row:nth-child(2) {
+    border-top: 0px;
+  }
+  .content .row .mega-links {
+    border-left: 0px;
+    padding-left: 15px;
+  }
+  .row .mega-links li {
+    margin: 0;
+  }
+  .content .row header {
+    font-size: 19px;
+  }
+}
+nav input {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jura", sans-serif;
+}
+
+main #slider {
+  overflow-x: hidden;
+}
+main #slider img {
+  object-fit: cover;
+}
+main #slider .carousel-control-next-icon {
+  background-color: #F3E0CA;
+  width: 45px;
+  height: 45px;
+  transition: 0.3s;
+}
+main #slider .carousel-control-next-icon:hover {
+  background-color: #9F7A49;
+}
+main #slider .carousel-control-prev-icon {
+  background-color: #F3E0CA;
+  width: 45px;
+  height: 45px;
+  transition: 0.3s;
+}
+main #slider .carousel-control-prev-icon:hover {
+  background-color: #9F7A49;
+}
+main #slider .img1 {
+  position: relative;
+}
+main #slider .img-1-text {
+  position: absolute;
+  top: 46%;
+  left: 62%;
+  color: white;
+}
+main #slider .img-1-text h3 {
+  font-size: 32px;
+  color: #9F7A49;
+}
+main #slider .img-1-text span {
+  font-size: 21px;
+  color: #F3E0CA;
+}
+main #slider .img-1-text .btn-1 {
+  position: absolute;
+  top: 90px;
+  left: 60%;
+}
+main #slider .img-1-text .btn-1 button {
+  width: 170px;
+  height: 50px;
+  display: block;
+  padding: 13px 0;
+  border: none;
+  border: 1px solid #F3E0CA;
+  background: transparent;
+  color: #F3E0CA;
+  font-weight: 700;
+  transition: 0.3s linear;
+  cursor: pointer;
+}
+main #slider .img-1-text .btn-1 button:hover {
+  background-color: #9F7A49;
+  color: white;
+}
+main #slider .img-2-text {
+  position: absolute;
+  top: 46%;
+  left: 27%;
+  color: white;
+}
+main #slider .img-2-text h3 {
+  font-size: 32px;
+  color: #9F7A49;
+}
+main #slider .img-2-text span {
+  font-size: 21px;
+  color: #F3E0CA;
+}
+main #slider .img-2-text .btn-2 {
+  position: absolute;
+  top: 90px;
+  left: 22%;
+}
+main #slider .img-2-text .btn-2 button {
+  width: 170px;
+  height: 50px;
+  display: block;
+  padding: 13px 0;
+  border: none;
+  border: 1px solid #F3E0CA;
+  background: transparent;
+  color: #F3E0CA;
+  font-weight: 700;
+  transition: 0.3s linear;
+  cursor: pointer;
+}
+main #slider .img-2-text .btn-2 button:hover {
+  background-color: #9F7A49;
+  color: white;
+}
+main #slider .roww {
+  display: flex;
+}
+main #slider .roww .girl {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+main #slider .roww .girl .girl1 {
+  object-fit: cover;
+  height: 416px;
+}
+main #slider .roww .girl img {
+  object-fit: cover;
+  width: 100%;
+  transition: 0.8s ease-in-out;
+}
+main #slider .roww .girl img:hover {
+  transform: scale(1.2);
+}
+main #slider .roww .girl .girl1_text {
+  position: absolute;
+  color: white;
+  top: 40%;
+  left: 58%;
+}
+main #slider .roww .girl .girl1_text span {
+  font-size: 38px;
+  color: #9F7A49;
+}
+main #slider .roww .girl .girl1_text p {
+  font-size: 17px;
+}
+main #slider .roww .girl .girl1_text .btn-3 {
+  position: absolute;
+  left: 50%;
+  padding-top: 5%;
+}
+main #slider .roww .girl .girl1_text .btn-3 button {
+  width: 170px;
+  height: 50px;
+  display: block;
+  padding: 13px 0;
+  border: none;
+  border: 1px solid #F3E0CA;
+  background: transparent;
+  color: #F3E0CA;
+  font-weight: 700;
+  transition: 0.3s linear;
+  cursor: pointer;
+}
+main #slider .roww .girl .girl1_text .btn-3 button:hover {
+  background-color: #9F7A49;
+  color: white;
+}
+@media screen and (max-width: 970px) {
+  main #slider .roww .girl .girl1_text {
+    display: none;
+  }
+  main #slider .roww .girl .girl1_text .btn-3 {
+    display: none;
+  }
+}
+main #slider .roww .all-girl2 {
+  position: relative;
+  overflow: hidden;
+}
+main #slider .roww .all-girl2 img {
+  transition: 0.8s ease-in-out;
+}
+main #slider .roww .all-girl2 img:hover {
+  transform: scale(1.2);
+}
+main #slider .roww .all-girl2 .girl2 {
+  width: 100%;
+  object-fit: cover;
+  height: 416px;
+}
+main #slider .roww .all-girl2 .girl2_text {
+  position: absolute;
+  top: 42%;
+  color: white;
+  left: 56%;
+}
+main #slider .roww .all-girl2 .girl2_text span {
+  font-size: 38px;
+  color: #9F7A49;
+}
+main #slider .roww .all-girl2 .girl2_text p {
+  font-size: 17px;
+}
+main #slider .roww .all-girl2 .girl2_text .btn-4 {
+  position: absolute;
+  left: 50%;
+  padding-top: 5%;
+}
+main #slider .roww .all-girl2 .girl2_text .btn-4 button {
+  width: 170px;
+  height: 50px;
+  display: block;
+  padding: 13px 0;
+  border: none;
+  border: 1px solid #F3E0CA;
+  background: transparent;
+  color: #F3E0CA;
+  font-weight: 700;
+  transition: 0.3s linear;
+  cursor: pointer;
+}
+main #slider .roww .all-girl2 .girl2_text .btn-4 button:hover {
+  background-color: #9F7A49;
+  color: white;
+}
+@media screen and (max-width: 970px) {
+  main #slider .roww .all-girl2 .girl2_text {
+    display: none;
+  }
+  main #slider .roww .all-girl2 .girl2_text .btn-4 {
+    display: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  main #slider .carousel .carousel-item .img-1-text {
+    display: none;
+  }
+  main #slider .carousel .carousel-item .img-2-text {
+    display: none;
+  }
+}
+main #cards {
+  background-image: url(https://chrono-dial.myshopify.com/cdn/shop/files/chrono-img1.jpg?v=1613163886);
+  width: 100%;
+  height: 820px;
+  background-position: bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #cards::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+main #cards .cards_text {
+  color: white;
+  text-align: center;
+}
+main #cards .cards_text span {
+  font-size: 16px;
+}
+main #cards .cards_text h3 {
+  color: #9F7A49;
+  font-size: 24px;
+}
+main #cards .cards_text p {
+  font-size: 16px;
+  color: #9C9C9C;
+  padding-top: 10px;
+}
+main #cards .cards_text .card_btn {
+  position: absolute;
+  left: 45%;
+  padding-top: 15px;
+}
+main #cards .cards_text .card_btn button {
+  width: 170px;
+  height: 50px;
+  display: block;
+  padding: 13px 0;
+  border: none;
+  border: 1px solid #F3E0CA;
+  background: transparent;
+  color: #F3E0CA;
+  font-weight: 700;
+  transition: 0.3s linear;
+  cursor: pointer;
+}
+main #cards .cards_text .card_btn button:hover {
+  background-color: #9F7A49;
+  color: white;
+}
+main #clocks {
+  background: url(https://chrono-dial.myshopify.com/cdn/shop/files/img1.jpg?v=1613162803&width=1920);
+  padding: 50px;
+  width: 100%;
+  background-position: bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #clocks::before {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+main #clocks .all-clocks-text {
+  text-align: center;
+  font-weight: 800;
+}
+main #clocks .all-clocks-text span {
+  font-size: 16px;
+  color: #000000;
+}
+main #clocks .all-clocks-text h2 {
+  color: #000000;
+  font-size: 30px;
+  font-weight: 600;
+}
+main #clocks .clocks_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s linear;
+}
+main #clocks .clocks_img img:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
+main #clocks .clocks_img .clocks_text {
+  text-align: center;
+}
+main #clocks .clocks_img .clocks_text span a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #000000;
+  transition: 0.3s;
+}
+main #clocks .clocks_img .clocks_text span a:hover {
+  color: #9F7A49;
+}
+main #clocks .clocks_img .clocks_btn {
+  text-align: center;
+  padding-top: 10px;
+}
+main #clocks .clocks_img .clocks_btn a {
+  color: #000000;
+  transition: 0.3s linear;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+}
+main #clocks .clocks_img .clocks_btn a:hover {
+  color: #9F7A49;
+}
+main #clock_slider {
+  background-image: url(https://chrono-dial.myshopify.com/cdn/shop/files/chrono-img1_4e04e0d0-e7b2-4e6a-8a8f-e87caa09bfcc.jpg?v=1613163901);
+  width: 100%;
+  height: 820px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #clock_slider::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000;
+  opacity: 0.852;
+}
+main #clock_slider .header_clock_slider_text {
+  position: relative;
+  color: white;
+  text-align: center;
+  top: -250%;
+  left: 50%;
+}
+main #clock_slider .header_clock_slider_text span {
+  font-size: 16px;
+}
+main #clock_slider .header_clock_slider_text h2 {
+  color: #9F7A49;
+  font-size: 30px;
+}
+main #clock_slider .carousel {
+  position: relative;
+  left: -50%;
+  top: 20%;
+}
+main #clock_slider .carousel .carousel-inner .carousel-item img {
+  object-fit: cover;
+}
+@media screen and (max-width: 992px) {
+  main #clock_slider .header_clock_slider_text {
+    display: none;
+  }
+}
+main #swipe {
+  background: url(https://chrono-dial.myshopify.com/cdn/shop/files/img1.jpg?v=1613162803&width=1920);
+  padding: 50px;
+  width: 100%;
+  background-position: bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #swipe::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+main #swipe .swipe_text {
+  text-align: center;
+}
+main #swipe .swipe_text span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+}
+main #swipe .swipe_text h2 {
+  font-size: 30px;
+  color: #000000;
+  font-weight: bold;
+}
+main #swipe .testimonial {
+  position: relative;
+  width: 100%;
+  padding: 50px 0;
+  overflow: hidden;
+}
+main #swipe .testimonial .image {
+  height: 170px;
+  width: 170px;
+  object-fit: cover;
+}
+main #swipe .testimonial .slide1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 30px;
+}
+main #swipe .testimonial .slide1 p {
+  text-align: center;
+  padding: 0 100px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+}
+main #swipe .testimonial .slide1 .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+main #swipe .testimonial .slide1 .details .name {
+  font-size: 17px;
+  font-weight: 600;
+  color: #333;
+}
+main #swipe .testimonial .slide1 .details .job {
+  font-size: 16px;
+  font-weight: 400;
+  color: gray;
+}
+main #swipe .testimonial .nav-btn {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  transform: translateY(30px);
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
+}
+main #swipe .testimonial .nav-btn:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+main #swipe .testimonial .nav-btn::after,
+main #swipe .testimonial .nav-btn::before {
+  font-size: 20px;
+  color: #fff;
+}
+main #swipe .testimonial .swiper-pagination-bullet {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+main #swipe .testimonial .swiper-pagination-bullet-active {
+  background-color: #9F7A49;
+}
+@media screen and (max-width: 768px) {
+  main #swipe p {
+    padding: 0 20px;
+  }
+  main #swipe .nav-btn {
+    display: none;
+  }
+}
+main #dials {
+  background: url(https://chrono-dial.myshopify.com/cdn/shop/files/specification-banner.jpg?v=1621437492&width=1920);
+  padding: 50px;
+  width: 100%;
+  background-position: bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #dials::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+main #dials .all-info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+main #dials .all-info .text h1 {
+  color: white;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 16px;
+}
+main #dials .all-info .text h2 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #9F7A49;
+}
+main #dials .all-info .text p {
+  font-size: 16px;
+  color: #9C9C9C;
+}
+main #dials .all-info .all-items {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+}
+main #dials .all-info .all-items .items-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+main #dials .all-info .all-items .items-left .item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+main #dials .all-info .all-items .items-left .item img {
+  border-radius: 50%;
+}
+main #dials .all-info .all-items .items-left .item h1 {
+  font-size: 18px;
+  color: #9C9C9C;
+}
+main #dials .all-info .all-items .items-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+main #dials .all-info .all-items .items-right .item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+main #dials .all-info .all-items .items-right .item img {
+  border-radius: 50%;
+}
+main #dials .all-info .all-items .items-right .item h1 {
+  font-size: 18px;
+  color: #9C9C9C;
+}
+main #filter {
+  padding: 50px;
+}
+main #filter .text {
+  text-align: center;
+}
+main #filter .text h3 {
+  font-weight: bold;
+  font-size: 16px;
+}
+main #filter .text p {
+  font-size: 30px;
+  font-weight: 600;
+}
+main #filter #filter-buttons button {
+  font-size: 16px;
+}
+main #filter #filter-buttons .btn {
+  display: flex;
+  justify-content: center;
+}
+main #filter #filter-buttons button:hover {
+  color: #9F7A49;
+}
+main #filter #filterable-cards .card {
+  width: 15rem;
+}
+main #filter #filterable-cards {
+  justify-content: center;
+}
+main #filter #filterable-cards .card.hide {
+  display: none;
+}
+main #filter .card .card-body h6 {
+  text-align: center;
+}
+main #filter .card .card-body p {
+  text-align: center;
+}
+@media (max-width: 600px) {
+  main #filter #filterable-cards {
+    justify-content: center;
+  }
+  main #filter #filterable-cards .card {
+    width: calc(50% - 10px);
+  }
+}
+main #video {
+  background-image: url(https://chrono-dial.myshopify.com/cdn/shop/files/img6.jpg?v=1613163148&width=1100);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 820px;
+  object-fit: cover;
+  object-position: center;
+  background-attachment: unset;
+}
+main #video .video-text {
+  color: white;
+  text-align: center;
+  padding-top: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+main #video .video-text h1 {
+  font-size: 40px;
+  font-weight: 400;
+  font-family: "Tajawal", sans-serif;
+}
+main #video .video-text p {
+  font-size: 16px;
+}
+main #video .modal-content {
+  width: 100%;
+}
+main #video i {
+  font-size: 80px;
+  color: white;
+  transition: 0.3s;
+}
+main #video i:hover {
+  color: #9F7A49;
+}
+main #news {
+  padding: 50px;
+  background-color: #000000;
+  overflow-y: hidden;
+}
+main #news .news-text {
+  text-align: center;
+  padding: 50px;
+}
+main #news .news-text h1 {
+  color: #9C9C9C;
+  font-size: 16px;
+}
+main #news .news-text p {
+  color: #9C9C9C;
+  font-size: 30px;
+  font-weight: bold;
+}
+main #news .slider {
+  display: flex;
+}
+main #news .slider .card .content {
+  background-color: #000000;
+}
+main #news .slider .card {
+  flex: 1;
+  margin: 0 10px;
+  background: #fff;
+}
+main #news .slider .card .img {
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+}
+main #news .slider .card .img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.2s ease-in-out;
+}
+main #news .slider .card .img img:hover {
+  transform: scale(1.5);
+}
+main #news .slider .card .content {
+  padding: 10px 20px;
+}
+main #news .slider .card .content .title {
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+}
+main #news .slider .card .content p {
+  text-align: justify;
+  margin: 10px 0;
+  color: white;
+}
+main #news .slider .card .content .btn {
+  display: block;
+  margin: 10px 0;
+}
+main #news .slider .card .content .btn button {
+  background: black;
+  color: #9F7A49;
+  border: 1px solid #9F7A49;
+  width: 156px;
+  height: 50px;
+  font-size: 17px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+main #news .slider .card .content .btn button:hover {
+  background-color: #9F7A49;
+  color: white;
+}
+@media screen and (max-width: 992px) {
+  main #news .slider .card {
+    display: none;
+  }
+}
+main #subscribe {
+  padding: 50px;
+  background-color: #000000;
+}
+main #subscribe .sb_text {
+  text-align: center;
+}
+main #subscribe .sb_text h1 {
+  font-size: 16px;
+  color: #9C9C9C;
+}
+main #subscribe .sb_text p {
+  font-size: 30px;
+  color: #9C9C9C;
+  font-weight: bold;
+}
+main #subscribe .adress {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+main #subscribe .adress input {
+  width: 600px;
+  padding: 10px;
+  background: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid white;
+}
+main #subscribe .adress button {
+  background: black;
+  color: #9F7A49;
+  border: none;
+  border-bottom: 1px solid #9F7A49;
+  width: 156px;
+  height: 50px;
+  font-size: 17px;
+  padding: 5px 8px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+main #subscribe .adress button:hover {
+  background-color: #9F7A49;
+  color: white;
+}
+main #subscribe .adress button i {
+  padding-left: 15px;
+  font-size: 20px;
+}
+@media screen and (max-width: 992px) {
+  main #subscribe .adress button .bi-telegram {
+    display: none;
+  }
+}
+
+footer {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: #f3f3f3;
+}
+
+footer .content {
+  max-width: 1250px;
+  margin: auto;
+  padding: 30px 40px 40px 40px;
+}
+
+footer .content .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+footer .content .link-boxes {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .content .link-boxes .box {
+  width: calc(20% - 10px);
+}
+
+.content .link-boxes .box .link_name {
+  color: #9F7A49;
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.content .link-boxes .box li {
+  margin: 6px 0;
+  list-style: none;
+}
+
+.content .link-boxes .box li a {
+  color: black;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: all 0.4s ease-in-out;
+}
+
+.content .link-boxes .box li a:hover {
+  color: #9F7A49;
+}
+
+.content .link-boxes .input-box {
+  margin-right: 55px;
+}
+
+footer .bottom-details {
+  width: 100%;
+}
+
+.bottom-logo {
+  display: flex;
+  justify-content: center;
+  object-fit: contain;
+}
+
+.bottom-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
+  padding-top: 15px;
+}
+
+.bi-twitter:hover {
+  transition: 0.3s ease-in-out;
+  color: #9F7A49;
+}
+
+.bi-facebook:hover {
+  transition: 0.3s ease-in-out;
+  color: #9F7A49;
+}
+
+.bi-tropical-storm:hover {
+  transition: 0.3s ease-in-out;
+  color: #9F7A49;
+}
+
+.bi-instagram:hover {
+  transition: 0.3s ease-in-out;
+  color: #9F7A49;
+}
+
+footer .bottom-details .bottom_text {
+  max-width: 1250px;
+  margin: auto;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-details .bottom_text span,
+.bottom-details .bottom_text a {
+  font-size: 18px;
+  font-weight: 300;
+  color: black;
+  opacity: 0.8;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.bottom-details .bottom_text a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.bottom-details .bottom_text a {
+  margin-right: 10px;
+}
+
+@media (max-width: 900px) {
+  footer .content .link-boxes {
+    flex-wrap: wrap;
+  }
+  footer .content .link-boxes .input-box {
+    width: 40%;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 700px) {
+  footer {
+    position: relative;
+  }
+  .content .top .logo-details {
+    font-size: 26px;
+  }
+  .content .top .media-icons a {
+    height: 35px;
+    width: 35px;
+    font-size: 14px;
+    line-height: 35px;
+  }
+  footer .content .link-boxes .box {
+    width: calc(33.3333333333% - 10px);
+  }
+  footer .content .link-boxes .input-box {
+    width: 60%;
+  }
+  .bottom-details .bottom_text span,
+  .bottom-details .bottom_text a {
+    font-size: 12px;
+  }
+}
+@media (max-width: 520px) {
+  footer::before {
+    top: 145px;
+  }
+  footer .content .top {
+    flex-direction: column;
+  }
+  .content .top .media-icons {
+    margin-top: 16px;
+  }
+  footer .content .link-boxes .box {
+    width: calc(50% - 10px);
+  }
+  footer .content .link-boxes .input-box {
+    width: 100%;
+  }
+}
+main #faq {
+  background: url(https://chrono-dial.myshopify.com/cdn/shop/files/img1.jpg?v=1613162803&width=1920);
+  padding: 50px;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+main #faq::before {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+main #faq .faq_text {
+  text-align: center;
+  padding-top: 50px;
+}
+main #faq .faq_text h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+main #faq .faq_text a {
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+  transition: 0.3s ease-in-out;
+}
+main #faq .faq_text a:hover {
+  color: #9F7A49;
+}
+main #question {
+  padding: 50px;
+}
+main #question .question-text {
+  text-align: center;
+  padding-top: 50px;
+  padding: 50px;
+}
+main #question .question-text h2 {
+  font-size: 16px;
+  color: #000000;
+}
+main #question .question-text span {
+  font-size: 30px;
+  color: #000000;
+  font-weight: bold;
+}
+main #question .accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+main #question .accordion .accordion-button {
+  background-color: #9F7A49;
+  color: white;
+}
+
+main #contact {
+  padding: 50px;
+}
+main #contact .contact-text {
+  text-align: center;
+  padding: 50px;
+}
+main #contact .contact-text h3 {
+  font-size: 16px;
+}
+main #contact .contact-text h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+main #contact .all-icn {
+  width: 100%;
+  height: 235px;
+  border: 1px solid #cacaca;
+  transition: 0.3s ease-in-out;
+}
+main #contact .all-icn:hover {
+  border: 1px solid #9F7A49;
+}
+main #contact .all-icn .contact_icon {
+  padding-left: 20px;
+}
+main #contact .all-icn .contact_icon i {
+  font-size: 30px;
+  position: relative;
+  top: 20px;
+}
+main #contact .all-icn .contact_text {
+  padding-top: 40px;
+  padding-left: 16px;
+}
+main #contact .all-icn .contact_text h3 {
+  font-size: 20px;
+}
+main #contact .all-icn .contact_text p {
+  font-size: 18px;
+}
+main #message {
+  padding: 50px;
+}
+main #message form .guruweba_example_form {
+  width: 290px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main #message form .guruweba_example_caption {
+  font-size: 24px;
+  text-align: center;
+}
+main #message form .guruweba_example_form .guruweba_example_infofield {
+  margin-top: 10px;
+  font-weight: bold;
+}
+main #message form .guruweba_example_form select,
+main #message form .guruweba_example_form input,
+main #message form .guruweba_example_form textarea {
+  width: 100%;
+  margin: 5px 0;
+  padding: 5px 15px;
+}
+main #message form input {
+  width: 700px;
+  margin: 5px 0;
+  padding: 5px 15px;
+  height: 50px;
+  border: none;
+  /* background: transparent; */
+  border-bottom: 1px solid black;
+}
+main #message form .btn_1 {
+  color: #9F7A49;
+  border: 1px solid #9F7A49;
+  width: 250px;
+  height: 50px;
+  font-size: 17px;
+  padding: 5px 8px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+main #message form .btn_1:hover {
+  background-color: #9F7A49;
+  color: white;
+}
+main #message form textarea {
+  width: 700px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+@media screen and (max-width: 500px) {
+  main #message .map {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  main #message .guruweba_example_form {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  main #message .guruweba_example_form {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  main #message .map {
+    display: none;
+  }
+}
